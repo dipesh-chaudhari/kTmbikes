@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>kTm Bike's</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="/index.html"><img src="Images/logo3.png" width="100" height="50" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/motorcycles.html">MOTORCYCLES</a>
+                        <a class="dropdown-item" href="/racing.html">RACING</a>
+                        <a class="dropdown-item" href="/part&wear.html">PART & WEAR</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Write for us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SingUpModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="LoginModalLabel">Login to kTm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Nickname">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password*</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your Password with
+                                anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"><em>Remember me..!</em></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--SingUp Modal -->
+    <div class="modal fade" id="SingUpModal" tabindex="-1" role="dialog" aria-labelledby="SingUpModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SingUpModalLabel">Get an kTm Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Set Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Set Password*</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your Password with
+                                    anyone
+                                    else.</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Re-Password*</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="birthday">Birthdate : &nbsp; </label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Female</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Other</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="exampleInputEmail1" class="col-sm-1 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="name@example.com">
+                                <small id="emailHelp" class="form-text text-muted">For Confirmation.</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">City</label>
+                                <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">State</label>
+                                <select class="custom-select" id="validationDefault04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa </option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu and Kashmir </option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra </option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">Zip</label>
+                                <input type="text" class="form-control" id="validationDefault05" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2"><em>
+                                        Agree to terms and conditions..!
+                                    </em></label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/travel.jpg" width="1000" height="400" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>kTm Travel</h3>
+                    <h1>#GOADVENTURE</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/mx.html">MX</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/enduro.html">Enduro</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/freeride.html">Freeride</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="/travel.html">Travel</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/supermoto.html">Supermoto</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/naked.html">Naked</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/supersport.html">Supersport</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container marketing">
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 1290 SUPER ADVENTURE R <span class="text-muted">KING OF
+                        ADVENTURE</span></h2>
+                <p class="lead">KTM’s rally experts have brought out the big guns for hardcore adventurers. They've
+                    packed 1301 cc, 140 Nm of torque and 160 hp (119 kW) into the world’s most advanced travel enduro
+                    chassis. Ready to rumble on any terrain, this mile-munching weapon is the ultimate offroad travel
+                    enduro for exploring the trail less traveled – the tougher, the better.</p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel1.png" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 1090 ADVENTURE R <span class="text-muted">TIME TO GET WILD</span>
+                </h2>
+                <p class="lead">The KTM 1090 ADVENTURE R stares down anything in its path. Its forgiving WP suspension,
+                    wire-spoked offroad wheels, and built-to-last 125hp fuel-efficient engine is set to take you further
+                    off the beaten track. This motorcycle is KTM's most offroad-capable ADVENTURE model and uses the
+                    same state-of-the-art technology as the KTM 1290 SUPER ADVENTURE R. Inspired by decades of rally
+                    raid victories it has the genes to handle the wildest adventures.
+
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel2.png" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 790 ADVENTURE <span class="text-muted">UNLIMITED ADVENTURE</span>
+                </h2>
+                <p class="lead">If you’re looking for a high-performance motorcycle that’s lightweight and compact, one
+                    that specialises in adventure touring with the ability to explore further offroad when the tarmac
+                    ends, then look no further than the KTM 790 ADVENTURE. This sporty travel bike, with KTM’s offroad
+                    genes, is built for endless travel enduro exploration and holds huge potential for offroad riding.
+                    Whether it’s in the desert, on remote mountain trails or a transcontinental crossing, no other
+                    twin-cylinder travel enduro bike can match it.</p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel3.png" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 690 ENDURO R <span class="text-muted">ACE OF ALL SURFACESY</span>
+                </h2>
+                <p class="lead">Ride from home and feel the adrenaline build while chasing tarmac curves towards your
+                    favourite offroad location. No trailer required just twist the throttle of the all-new KTM 690
+                    ENDURO R, which really comes into its own when the dirt begins and the trail gets more extreme. Its
+                    new chassis, revised styling, and an updated version of the trusted 690 LC4 motor, are enhanced by
+                    upgraded electronics and new WP XPLOR suspension. Master more challenging terrain on this
+                    lightweight, high-performance king of versatility.
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel4.png" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 390 ADVENTURE <span class="text-muted">MORE ADVENTURE AWAITS
+                        YOU</span></h2>
+                <p class="lead">Satisfy your restless spirit with the new KTM 390 ADVENTURE. This compact
+                    single-cylinder travel-enduro machine has a sporty design attitude, with the comprehensive equipment
+                    and proven performance credentials of the KTM ADVENTURE range. Its versatile ergonomics, smooth
+                    power delivery and innovative technology all come together in a comfortable, lightweight package
+                    built for those wanting to fit more adventure into their daily lives.</p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel5.jpg" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 450 RALLY <span class="text-muted">DESERT DOMINATOR</span>
+                </h2>
+                <p class="lead">KTM has dominated the Dakar Rally since 2001. To keep the edge, a new factory race bike
+                    was unveiled at the 2018 Dakar Rally. Since then, the same overall design, layout and features have
+                    been available to non-factory riders with serious Dakar, rally raid and cross-country rally
+                    ambitions.
+
+
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/travel6.jpg" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+    </div>
+
+    <footer class="container-fluid bg-dark text-muted ">
+        <p class="float-right  my-4"><a href="#">Back to top &uarr;</a></p>
+        <div id="footer" class="row ">
+            <div id="firstpart" class="col-md-2 my-4">
+                <p><strong>THE COMPANY</strong><br>
+                    <em><a href="#" class="text-white">Vision</a> <br>
+                        <a href="about.html" class="text-white">About kTm</a> <br>
+                        <a href="#" class="text-white">Careers</a> <br>
+                        <a href="contact.html" class="text-white">Contact</a> <br>
+                        <a href="#" class="text-white">Images</a>
+                        <br><a href="#" class="text-white">Investor Relations</a></em></p>
+
+            </div>
+
+            <div id="secondpart" class="col-md-2 my-4">
+                <p><strong>NEWS & EVENTS</strong><br>
+                    <em><a href="#" class="text-white">News</a> <br>
+                        <a href="racing.html" class="text-white">Racing</a> <br>
+                        <a href="#" class="text-white">Ride kTm</a> <br><a
+                            href="#" class="text-white">kTm Newseletter</a> <br>
+                            <a href="#" class="text-white">kTm Blog</a></em></p>
+
+            </div>
+            <div id="thirdpart" class="col-md-2 my-4">
+                <p><strong>LEGAL</strong><br>
+                    <em><a href="#" class="text-white">Imprit</a> <br>
+                        <a href="#" class="text-white">Privacy Policy</a> <br>
+                        <a href="#" class="text-white">Legal Notices</a></em>
+                </p>
+
+
+            </div>
+            <div id="fourthpart" class="col-md-2 my-4">
+                <p><strong>CONNECT</strong><br>
+                    <a href="#"><img src=Images/insta.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/fb.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/wiki.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <br><br>
+                    <a href="#"><img src=Images/youtubelogo.png alt="..."
+                            style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/twitterlogo.png alt=""
+                            style="height:40px; width:40px; float:center-right;"></a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider bg-white">
+        <p>Copyright &copy; 2020 kTm Motorcycle, all rights reserved</p>
+        <p>Desing by Dipesh Chaudhari</p>
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
