@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>kTm Bike's</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="/index.html"><img src="Images/logo3.png" width="100" height="50" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/motorcycles.html">MOTORCYCLES</a>
+                        <a class="dropdown-item" href="/racing.html">RACING</a>
+                        <a class="dropdown-item" href="/part&wear.html">PART & WEAR</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Write for us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SingUpModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="LoginModalLabel">Login to kTm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Nickname">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password*</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your Password with
+                                anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"><em>Remember me..!</em></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--SingUp Modal -->
+    <div class="modal fade" id="SingUpModal" tabindex="-1" role="dialog" aria-labelledby="SingUpModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SingUpModalLabel">Get an kTm Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Set Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Set Password*</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your Password with
+                                    anyone
+                                    else.</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Re-Password*</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="birthday">Birthdate : &nbsp; </label>
+                            <input type="date" id="birthday" name="birthday">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Female</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Other</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <label for="exampleInputEmail1" class="col-sm-1 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="name@example.com">
+                                <small id="emailHelp" class="form-text text-muted">For Confirmation.</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">City</label>
+                                <input type="text" class="form-control" id="validationDefault03" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">State</label>
+                                <select class="custom-select" id="validationDefault04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa </option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu and Kashmir </option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra </option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault05">Zip</label>
+                                <input type="text" class="form-control" id="validationDefault05" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2"><em>
+                                        Agree to terms and conditions..!
+                                    </em></label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/naked.jpg" width="1000" height="400" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>kTm Naked</h3>
+                    <h1>#GETDUKED</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/mx.html">MX</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/enduro.html">Enduro</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/freeride.html">Freeride</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/travel.html">Travel</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/supermoto.html">Supermoto</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="/naked.html">Naked</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="/supersport.html">Supersport</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container marketing">
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 790 DUKE <span class="text-muted">THE SCALPEL</span></h2>
+                <p class="lead">The KTM 790 DUKE is devastatingly accurate. The agility you’d expect from a single,
+                    blended with the meaty punch of a twin. It carves corners with pinpoint precision, boasting the
+                    all-new 799 cc LC8c parallel twin motor nestled into one of the lightest and most compact chassis
+                    around. The KTM 790 DUKE is all about being fast where it counts – in the corners. Dynamically
+                    flicking from one bend to the next, putting you in the heart of the action and not on the sidelines.
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked1.png" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 690 DUKE <span class="text-muted">THE SUPER SINGLE</span>
+                </h2>
+                <p class="lead">The original DUKE was revolutionary when it was released two decades ago. As KTM’s first
+                    single-cylinder street bike, it quickly grew into a cult classic, adding extreme fun to a raw and
+                    radical concept. Today’s KTM 690 DUKE is the closest rendition to the original DUKE, but with modern
+                    styling, refinements and enhancements. The world’s most powerful single-cylinder production
+                    motorcycle stands at the leading edge once more. Long live the DUKE!</p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked2.png" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 200 DUKE <span class="text-muted">THE LIGHT HEAVYWEIGHT</span></h2>
+                <p class="lead">It rides faster than it looks. This fighter is the only 200cc naked bike with real
+                    racing genes. High-tech components – such as the ultra-compact, water-cooled, single-cylinder,
+                    4-stroke engine, and the ultralight tubular trellis frame, state-of-the-art injection electronics,
+                    cutting-edge WP suspension and elegant swingarm – are all perfectly integrated to ensure maximum
+                    riding fun and dynamic cornering.
+
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked3.png" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 125 DUKE <span class="text-muted">THE DUKE ATTITUDE STARTS
+                        HERE</span>
+                </h2>
+                <p class="lead">The KTM 125 DUKE may be the entry-level bike of the range, but it isn't here to play
+                    games. It's built with the same attitude as the bigger bikes - and it shows. It's no holds barred
+                    with this urban warrior. This 4-stroke single cylinder has fuel-injection and a 6-speed transmission
+                    to deliver class-leading performance with low fuel consumption to keep you riding longer.
+
+
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked4.png" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette my-5">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">KTM 390 DUKE <span class="text-muted">THE CORNER ROCKET</span></h2>
+                <p class="lead">The KTM 390 DUKE is a pure example of what draws so many to the thrill of street
+                    motorcycling. This Corner Rocket maximizes enjoyment and user value, taking the honors wherever
+                    nimble handling counts. Light as a feather, powerful and packed with state-of-the-art technology, it
+                    guarantees a thrilling ride, whether you're fighting your way through the urban jungle or carving
+                    your name into a forest of bends.</p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked5.png" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+
+        <div class="row featurette my-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">KTM 250 DUKE <span class="text-muted">THRILL CHASER</span>
+                </h2>
+                <p class="lead">If chasing thrills is your game then climb aboard the KTM 250 DUKE. It combines maximum
+                    riding exhilaration with optimum user value and is hard to beat wherever nimble handling counts.
+                    Lightweight, powerful and packed with advanced technology, it promises to deliver a thrilling ride
+                    from sunrise to sunset.
+
+
+
+                </p>
+                <a href="#" class="stretched-link">More details...</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="Images/naked6.png" alt="">
+
+            </div>
+        </div>
+
+
+        <hr class="featurette-divider">
+    </div>
+
+    <footer class="container-fluid bg-dark text-muted ">
+        <p class="float-right  my-4"><a href="#">Back to top &uarr;</a></p>
+        <div id="footer" class="row ">
+            <div id="firstpart" class="col-md-2 my-4">
+                <p><strong>THE COMPANY</strong><br>
+                    <em><a href="#" class="text-white">Vision</a> <br>
+                        <a href="about.html" class="text-white">About kTm</a> <br>
+                        <a href="#" class="text-white">Careers</a> <br>
+                        <a href="contact.html" class="text-white">Contact</a> <br>
+                        <a href="#" class="text-white">Images</a>
+                        <br><a href="#" class="text-white">Investor Relations</a></em></p>
+
+            </div>
+
+            <div id="secondpart" class="col-md-2 my-4">
+                <p><strong>NEWS & EVENTS</strong><br>
+                    <em><a href="#" class="text-white">News</a> <br>
+                        <a href="racing.html" class="text-white">Racing</a> <br>
+                        <a href="#" class="text-white">Ride kTm</a> <br><a
+                            href="#" class="text-white">kTm Newseletter</a> <br>
+                            <a href="#" class="text-white">kTm Blog</a></em></p>
+
+            </div>
+            <div id="thirdpart" class="col-md-2 my-4">
+                <p><strong>LEGAL</strong><br>
+                    <em><a href="#" class="text-white">Imprit</a> <br>
+                        <a href="#" class="text-white">Privacy Policy</a> <br>
+                        <a href="#" class="text-white">Legal Notices</a></em>
+                </p>
+
+
+            </div>
+            <div id="fourthpart" class="col-md-2 my-4">
+                <p><strong>CONNECT</strong><br>
+                    <a href="#"><img src=Images/insta.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/fb.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/wiki.png alt="..." style="height:40px; width:40px; float:center-right;"></a>
+                    <br><br>
+                    <a href="#"><img src=Images/youtubelogo.png alt="..."
+                            style="height:40px; width:40px; float:center-right;"></a>
+                    <a href="#"><img src=Images/twitterlogo.png alt=""
+                            style="height:40px; width:40px; float:center-right;"></a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider bg-white">
+        <p>Copyright &copy; 2020 kTm Motorcycle, all rights reserved</p>
+        <p>Desing by Dipesh Chaudhari</p>
+
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
